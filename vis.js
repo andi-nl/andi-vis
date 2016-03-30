@@ -1,9 +1,9 @@
 d3.json("data/patientoutput.json", function(patientStats) {
 
-  var w = 500;
-  var h = 500;
-  var padding = 20;
 
+  var margin = {top: 30, right: 30, bottom: 30, left:30};
+  var width = 500 - margin.left - margin.right;
+  var height = 500 - margin.top - margin.bottom;
   // scales
 
   // for x need to translate test name to number
@@ -14,19 +14,21 @@ d3.json("data/patientoutput.json", function(patientStats) {
 
   var xScale = d3.scale.linear()
                        .domain([0, testnames.length - 1])
-                       .range([padding, w - padding])
+                       .range([0, width])
 
   var yScale = d3.scale.linear()
                        .domain([-5, 5])
-                       .range([h - padding, padding]);
+                       .range([height, 0]);
 
 
 
 // define plot
   var svg = d3.select("body")
           .append("svg")
-          .attr("width", w)
-          .attr("height", h);
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
 
   // define axes
   var xAxis = d3.svg.axis()
@@ -65,7 +67,7 @@ d3.json("data/patientoutput.json", function(patientStats) {
      })
      .attr("r", 5);
 
-     // add zero line
+  // add zero line
   svg.append("line")
     .attr({
       x1: xScale(0),
@@ -76,4 +78,8 @@ d3.json("data/patientoutput.json", function(patientStats) {
     .style({
       stroke: "#000000"
     })
+
+  // add edges
+  svg.selectAll("line")
+    .data()
 });
