@@ -65,4 +65,15 @@ d3.json("data/patientoutput.json", function(patientStats) {
      })
      .attr("r", 5);
 
+     // add zero line
+  svg.append("line")
+    .attr({
+      x1: xScale(0),
+      y1: yScale(0),
+      x2: xScale(3),
+      y2: yScale(0)
+    })
+    .style({
+      stroke: "#000000"
+    })
 });
