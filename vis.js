@@ -5,6 +5,21 @@ d3.json("data/patientoutput.json", function(patientStats) {
   var width = 500 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
   // scales
+  var minScore = d3.min([d3.min(patientStats, function(d) {
+                                  return d.inneredge;
+                                }),
+                         d3.min(patientStats, function(d) {
+                                  return d.univariateT;
+                                })
+                       ]);
+
+  var maxScore = d3.max([d3.max(patientStats, function(d) {
+                                  return d.outeredge;
+                                }),
+                         d3.max(patientStats, function(d) {
+                                  return d.univariateT;
+                                })
+                        ]);
 
   // for x need to translate test name to number
   var testnames = patientStats.map(function(t) {
@@ -17,10 +32,17 @@ d3.json("data/patientoutput.json", function(patientStats) {
                        .range([0, width])
 
   var yScale = d3.scale.linear()
-                       .domain([-5, 5])
+                       .domain([minScore, maxScore])
                        .range([height, 0]);
 
+// define lines
+var outerLine = d3.svg.line()
+  .x(function(d) {return xScale(testnames.indexOf(d['testnames']));})
+  .y(function(d) {return yScale(d.outeredge)})
 
+var innerLine = d3.svg.line()
+  .x(function(d) {return xScale(testnames.indexOf(d['testnames']));})
+  .y(function(d) {return yScale(d.inneredge)})
 
 // define plot
   var svg = d3.select("body")
@@ -77,9 +99,13 @@ d3.json("data/patientoutput.json", function(patientStats) {
     })
     .style({
       stroke: "#000000"
-    })
+    });
 
-  // add edges
-  svg.selectAll("line")
-    .data()
+  // add lines
+  svg.append("path")
+    .attr("class", "line")
+    .attr("d", outerLine(patientStats));
+  svg.append("path")
+    .attr("class", "line")
+    .attr("d", innerLine(patientStats));
 });
