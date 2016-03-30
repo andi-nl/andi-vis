@@ -1,9 +1,16 @@
 d3.json("data/patientoutput.json", function(patientStats) {
 
 
-  var margin = {top: 30, right: 30, bottom: 30, left:30};
+  var margin = {top: 30, right: 50, bottom: 30, left:50};
   var width = 500 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
+
+  var color = d3.scale.category10();
+  // patients
+  var patients = _.union(patientStats.map(function(d) {
+    return d.id
+  }));
+
   // scales
   var minScore = d3.min([d3.min(patientStats, function(d) {
                                   return d.inneredge;
@@ -53,6 +60,14 @@ var innerLine = d3.svg.line()
                 "translate(" + margin.left + "," + margin.top + ")");
 
   // define axes
+
+  var yAxis = d3.svg.axis()
+                    .scale(yScale)
+                    .orient("right");
+  svg.append("g")
+      .attr("class", "axis")
+      .call(yAxis);
+
   var xAxis = d3.svg.axis()
                     .scale(xScale)
                     .orient("bottom")
@@ -65,16 +80,8 @@ var innerLine = d3.svg.line()
      .call(xAxis)
    .selectAll("text")
      .attr("dx", "3em")
-     .attr("dy", "3em")
-     .attr("transform", "rotate(45)");
-
-
-  var yAxis = d3.svg.axis()
-                    .scale(yScale)
-                    .orient("right");
-  svg.append("g")
-     .attr("class", "axis")
-     .call(yAxis);
+     .attr("dy", "1em")
+     .attr("transform", "rotate(0)");
 
 // add 'scatterplot' elements
   svg.selectAll("circle")
@@ -87,18 +94,16 @@ var innerLine = d3.svg.line()
      .attr("cy", function(d) {
        return yScale(d['univariateT']);
      })
-     .attr("r", 5);
+     .attr("r", 5)
+     .style("fill", function(d) { return color(d.id); });
 
   // add zero line
   svg.append("line")
     .attr({
       x1: xScale(0),
       y1: yScale(0),
-      x2: xScale(3),
+      x2: xScale(2),
       y2: yScale(0)
-    })
-    .style({
-      stroke: "#000000"
     });
 
   // add lines
