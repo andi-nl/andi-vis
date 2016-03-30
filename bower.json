@@ -1,0 +1,20 @@
+{
+  "name": "andi-vis",
+  "homepage": "https://github.com/andi-nl/andi-vis",
+  "authors": [
+    "Mateusz Kuzak <mateusz.kuzak@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
