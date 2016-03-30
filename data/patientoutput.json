@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1111",
+    "testnames": "m_AVLT_total1to5__",
+    "longtestnames": "Auditory Verbal Learning Test (AVLT) Total trial 1 to 5",
+    "inneredge": -1.9604,
+    "outeredge": 1.9604,
+    "univariateT": 1.33,
+    "multivariateT": 2.53
+  },
+  {
+    "id": "1111",
+    "testnames": "ef_LF_totalletter123__",
+    "longtestnames": "Letter Fluency total 3 lettters",
+    "inneredge": -1.9611,
+    "outeredge": 1.9611,
+    "univariateT": 0.96,
+    "multivariateT": 2.53
+  },
+  {
+    "id": "1111",
+    "testnames": "ef_SF_Animals__",
+    "longtestnames": "Semantic Fluency total animals 1 minute",
+    "inneredge": -1.9607,
+    "outeredge": 1.9607,
+    "univariateT": 0.8,
+    "multivariateT": 2.53
+  },
+  {
+    "id": "2222",
+    "testnames": "m_AVLT_total1to5__",
+    "longtestnames": "Auditory Verbal Learning Test (AVLT) Total trial 1 to 5",
+    "inneredge": -1.9604,
+    "outeredge": 1.9604,
+    "univariateT": 3.4,
+    "multivariateT": 1.58
+  },
+  {
+    "id": "2222",
+    "testnames": "ef_LF_totalletter123__",
+    "longtestnames": "Letter Fluency total 3 lettters",
+    "inneredge": -1.9611,
+    "outeredge": 1.9611,
+    "univariateT": 1.53,
+    "multivariateT": 1.58
+  },
+  {
+    "id": "2222",
+    "testnames": "ef_SF_Animals__",
+    "longtestnames": "Semantic Fluency total animals 1 minute",
+    "inneredge": -1.9607,
+    "outeredge": 1.9607,
+    "univariateT": 0.49,
+    "multivariateT": 1.58
+  }
+]
