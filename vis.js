@@ -2,14 +2,10 @@ d3.json("data/patientoutput.json", function(patientStats) {
 
 
   var margin = {top: 30, right: 50, bottom: 30, left:50};
-  var width = 500 - margin.left - margin.right;
+  var width = 800 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
 
   var color = d3.scale.category10();
-  // patients
-  var patients = _.union(patientStats.map(function(d) {
-    return d.id
-  }));
 
   // scales
   var minScore = d3.min([d3.min(patientStats, function(d) {
@@ -70,7 +66,7 @@ var innerLine = d3.svg.line()
 
   var xAxis = d3.svg.axis()
                     .scale(xScale)
-                    .orient("bottom")
+                    .orient("top")
                     .tickValues(d3.range(testnames.length))
                     .tickFormat(function(t) {
                       return testnames[t];
@@ -80,7 +76,7 @@ var innerLine = d3.svg.line()
      .call(xAxis)
    .selectAll("text")
      .attr("dx", "3em")
-     .attr("dy", "1em")
+     .attr("dy", "-0.3em")
      .attr("transform", "rotate(0)");
 
 // add 'scatterplot' elements
