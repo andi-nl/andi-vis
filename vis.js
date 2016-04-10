@@ -14,6 +14,8 @@ $(document).ready(function() {
     var color = d3.scale.category10();
 
     // scales
+
+    var scalePadding = 0.5;
     var minScore = d3.min([d3.min(patientStats, function(d) {
         return d.inneredge;
       }),
@@ -21,7 +23,7 @@ $(document).ready(function() {
         return d.univariateT;
       })
     ]);
-
+    minScore = minScore - scalePadding;
     var maxScore = d3.max([d3.max(patientStats, function(d) {
         return d.outeredge;
       }),
@@ -29,6 +31,7 @@ $(document).ready(function() {
         return d.univariateT;
       })
     ]);
+    maxScore = maxScore + scalePadding;
 
     // for x need to translate test name to number
     var testnames = patientStats.map(function(t) {
@@ -114,7 +117,7 @@ $(document).ready(function() {
       .attr({
         x1: xScale(0),
         y1: yScale(0),
-        x2: xScale(2),
+        x2: xScale(1),
         y2: yScale(0)
       });
 
