@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     var margin = {
       top: 30,
-      right: 50,
+      right: 100,
       bottom: 30,
       left: 50
     };
@@ -111,6 +111,17 @@ $(document).ready(function() {
       .style("fill", function(d) {
         return color(d.id);
       });
+
+    // add legend for patient
+    legendSpace = width / patientStats.length
+    patientStats.forEach(function(d, i) {
+      console.log(d.tails);
+      linesGraph.append("text")
+        .attr("x", width + margin.right / 2)
+        .attr("y", legendSpace - i * (legendSpace / 2))
+        .style("fill", color(d.id))
+        .text(d.id);
+    });
 
     // add zero line
     linesGraph.append("line")
