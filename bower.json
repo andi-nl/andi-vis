@@ -18,6 +18,9 @@
     "tests"
   ],
   "devDependencies": {
+  },
+  "dependencies": {
     "datatables": "^1.10.11"
+    "bootstrap": "^3.3.6"
   }
 }
