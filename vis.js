@@ -48,7 +48,7 @@ var innerLine = d3.svg.line()
   .y(function(d) {return yScale(d.inneredge)})
 
 // define plot
-  var svg = d3.select("body")
+  var linesGraph = d3.select("#lines-graph")
           .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -60,7 +60,7 @@ var innerLine = d3.svg.line()
   var yAxis = d3.svg.axis()
                     .scale(yScale)
                     .orient("right");
-  svg.append("g")
+  linesGraph.append("g")
       .attr("class", "axis")
       .call(yAxis);
 
@@ -71,7 +71,7 @@ var innerLine = d3.svg.line()
                     .tickFormat(function(t) {
                       return testnames[t];
                     });
-  svg.append("g")
+  linesGraph.append("g")
      .attr("class", "axis")
      .call(xAxis)
    .selectAll("text")
@@ -80,7 +80,7 @@ var innerLine = d3.svg.line()
      .attr("transform", "rotate(0)");
 
 // add 'scatterplot' elements
-  svg.selectAll("circle")
+  linesGraph.selectAll("circle")
      .data(patientStats)
      .enter()
      .append("circle")
@@ -94,7 +94,7 @@ var innerLine = d3.svg.line()
      .style("fill", function(d) { return color(d.id); });
 
   // add zero line
-  svg.append("line")
+  linesGraph.append("line")
     .attr({
       x1: xScale(0),
       y1: yScale(0),
@@ -103,10 +103,10 @@ var innerLine = d3.svg.line()
     });
 
   // add lines
-  svg.append("path")
+  linesGraph.append("path")
     .attr("class", "line")
     .attr("d", outerLine(patientStats));
-  svg.append("path")
+  linesGraph.append("path")
     .attr("class", "line")
     .attr("d", innerLine(patientStats));
 });
