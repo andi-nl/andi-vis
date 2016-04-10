@@ -26,7 +26,7 @@ d3.json("data/patientoutput.json", function(patientStats) {
 
   // for x need to translate test name to number
   var testnames = patientStats.map(function(t) {
-    return t.testname;
+    return t.plotname;
   });
   testnames = _.union(testnames);
 
@@ -40,11 +40,11 @@ d3.json("data/patientoutput.json", function(patientStats) {
 
 // define lines
 var outerLine = d3.svg.line()
-  .x(function(d) {return xScale(testnames.indexOf(d['testname']));})
+  .x(function(d) {return xScale(testnames.indexOf(d['plotname']));})
   .y(function(d) {return yScale(d.outeredge)})
 
 var innerLine = d3.svg.line()
-  .x(function(d) {return xScale(testnames.indexOf(d['testname']));})
+  .x(function(d) {return xScale(testnames.indexOf(d['plotname']));})
   .y(function(d) {return yScale(d.inneredge)})
 
 // define plot
@@ -85,7 +85,7 @@ var innerLine = d3.svg.line()
      .enter()
      .append("circle")
      .attr("cx", function(d) {
-       return xScale(testnames.indexOf(d['testname']));
+       return xScale(testnames.indexOf(d['plotname']));
      })
      .attr("cy", function(d) {
        return yScale(d['univariateT']);
