@@ -128,7 +128,7 @@ $(document).ready(function() {
       .attr({
         x1: xScale(0),
         y1: yScale(0),
-        x2: xScale(1),
+        x2: xScale(testnames.length - 1),
         y2: yScale(0)
       });
 
