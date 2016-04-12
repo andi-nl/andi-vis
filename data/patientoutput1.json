@@ -11,11 +11,11 @@
     "univariatedifferences": 1.5646,
     "univariateT": 2.03,
     "univariatedf": 5075,
-    "univariatep": 0.042,
+    "univariatep": "0.042",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -29,11 +29,11 @@
     "univariatedifferences": -2.3467,
     "univariateT": -2.72,
     "univariatedf": 4597,
-    "univariatep": 0.007,
+    "univariatep": "0.007",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -47,11 +47,11 @@
     "univariatedifferences": -2.1798,
     "univariateT": -2.31,
     "univariatedf": 3780,
-    "univariatep": 0.021,
+    "univariatep": "0.021",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -65,11 +65,11 @@
     "univariatedifferences": 5.3088,
     "univariateT": 5.11,
     "univariatedf": 462,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -83,11 +83,11 @@
     "univariatedifferences": 1.6004,
     "univariateT": 1.58,
     "univariatedf": 395,
-    "univariatep": 0.114,
+    "univariatep": "0.114",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -101,11 +101,11 @@
     "univariatedifferences": 4.6755,
     "univariateT": 4.53,
     "univariatedf": 345,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -119,11 +119,11 @@
     "univariatedifferences": 0.6599,
     "univariateT": 0.7,
     "univariatedf": 357,
-    "univariatep": 0.486,
+    "univariatep": "0.486",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -137,11 +137,11 @@
     "univariatedifferences": 5.2111,
     "univariateT": 5.29,
     "univariatedf": 346,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -155,11 +155,11 @@
     "univariatedifferences": 1.2745,
     "univariateT": 1.35,
     "univariatedf": 353,
-    "univariatep": 0.179,
+    "univariatep": "0.179",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -173,11 +173,11 @@
     "univariatedifferences": 1.186,
     "univariateT": 1.41,
     "univariatedf": 3140,
-    "univariatep": 0.16,
+    "univariatep": "0.160",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -191,11 +191,11 @@
     "univariatedifferences": 1.0098,
     "univariateT": 1.23,
     "univariatedf": 3078,
-    "univariatep": 0.218,
+    "univariatep": "0.218",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -209,11 +209,11 @@
     "univariatedifferences": 16.1557,
     "univariateT": 17.03,
     "univariatedf": 1770,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -227,11 +227,11 @@
     "univariatedifferences": 7.1063,
     "univariateT": 7.65,
     "univariatedf": 2144,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -245,11 +245,11 @@
     "univariatedifferences": 6.0875,
     "univariateT": 6.93,
     "univariatedf": 2130,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -263,11 +263,11 @@
     "univariatedifferences": 1.8258,
     "univariateT": 1.92,
     "univariatedf": 3002,
-    "univariatep": 0.055,
+    "univariatep": "0.055",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -281,11 +281,11 @@
     "univariatedifferences": 0.1815,
     "univariateT": 0.19,
     "univariatedf": 2987,
-    "univariatep": 0.853,
+    "univariatep": "0.853",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -299,11 +299,11 @@
     "univariatedifferences": 1.9913,
     "univariateT": 2.12,
     "univariatedf": 2842,
-    "univariatep": 0.034,
+    "univariatep": "0.034",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -317,11 +317,11 @@
     "univariatedifferences": 1.5952,
     "univariateT": 1.71,
     "univariatedf": 2896,
-    "univariatep": 0.087,
+    "univariatep": "0.087",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -335,11 +335,11 @@
     "univariatedifferences": 1.1246,
     "univariateT": 1.23,
     "univariatedf": 5782,
-    "univariatep": 0.22,
+    "univariatep": "0.220",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "1",
@@ -353,11 +353,11 @@
     "univariatedifferences": 2.5926,
     "univariateT": 2.97,
     "univariatedf": 2170,
-    "univariatep": 0.003,
+    "univariatep": "0.003",
     "multivariatedifference": 56.6245,
     "multivariateT": -41.0901,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -371,11 +371,11 @@
     "univariatedifferences": -1.7726,
     "univariateT": -2.3,
     "univariatedf": 5075,
-    "univariatep": 0.021,
+    "univariatep": "0.021",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -389,11 +389,11 @@
     "univariatedifferences": -3.8137,
     "univariateT": -4.42,
     "univariatedf": 4597,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -407,11 +407,11 @@
     "univariatedifferences": -3.4248,
     "univariateT": -3.63,
     "univariatedf": 3780,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -425,11 +425,11 @@
     "univariatedifferences": 3.8525,
     "univariateT": 3.71,
     "univariatedf": 462,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -443,11 +443,11 @@
     "univariatedifferences": 0.1945,
     "univariateT": 0.19,
     "univariatedf": 395,
-    "univariatep": 0.848,
+    "univariatep": "0.848",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -461,11 +461,11 @@
     "univariatedifferences": 4.1265,
     "univariateT": 4,
     "univariatedf": 345,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -479,11 +479,11 @@
     "univariatedifferences": -0.0261,
     "univariateT": -0.03,
     "univariatedf": 357,
-    "univariatep": 0.978,
+    "univariatep": "0.978",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -497,11 +497,11 @@
     "univariatedifferences": 4.1108,
     "univariateT": 4.17,
     "univariatedf": 346,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -515,11 +515,11 @@
     "univariatedifferences": 0.0771,
     "univariateT": 0.08,
     "univariatedf": 353,
-    "univariatep": 0.935,
+    "univariatep": "0.935",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -533,11 +533,11 @@
     "univariatedifferences": -2.1136,
     "univariateT": -2.5,
     "univariatedf": 3140,
-    "univariatep": 0.012,
+    "univariatep": "0.012",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -551,11 +551,11 @@
     "univariatedifferences": -2.078,
     "univariateT": -2.53,
     "univariatedf": 3078,
-    "univariatep": 0.011,
+    "univariatep": "0.011",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -569,11 +569,11 @@
     "univariatedifferences": 15.0597,
     "univariateT": 15.88,
     "univariatedf": 1770,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -587,11 +587,11 @@
     "univariatedifferences": 5.9223,
     "univariateT": 6.37,
     "univariatedf": 2144,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -605,11 +605,11 @@
     "univariatedifferences": 3.0515,
     "univariateT": 3.47,
     "univariatedf": 2130,
-    "univariatep": 0.001,
+    "univariatep": "0.001",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -623,11 +623,11 @@
     "univariatedifferences": 2.4089,
     "univariateT": 2.53,
     "univariatedf": 3002,
-    "univariatep": 0.011,
+    "univariatep": "0.011",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -641,11 +641,11 @@
     "univariatedifferences": 3.106,
     "univariateT": 3.17,
     "univariatedf": 2987,
-    "univariatep": 0.002,
+    "univariatep": "0.002",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -659,11 +659,11 @@
     "univariatedifferences": 2.6754,
     "univariateT": 2.85,
     "univariatedf": 2842,
-    "univariatep": 0.004,
+    "univariatep": "0.004",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -677,11 +677,11 @@
     "univariatedifferences": 3.097,
     "univariateT": 3.32,
     "univariatedf": 2896,
-    "univariatep": 0.001,
+    "univariatep": "0.001",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -695,11 +695,11 @@
     "univariatedifferences": 2.3798,
     "univariateT": 2.6,
     "univariatedf": 5782,
-    "univariatep": 0.009,
+    "univariatep": "0.009",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "2",
@@ -713,11 +713,11 @@
     "univariatedifferences": 1.3376,
     "univariateT": 1.53,
     "univariatedf": 2170,
-    "univariatep": 0.125,
+    "univariatep": "0.125",
     "multivariatedifference": 38.1709,
     "multivariateT": -49.6651,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -731,11 +731,11 @@
     "univariatedifferences": 2.4933,
     "univariateT": 3.24,
     "univariatedf": 5075,
-    "univariatep": 0.001,
+    "univariatep": "0.001",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -749,11 +749,11 @@
     "univariatedifferences": 0.4625,
     "univariateT": 0.54,
     "univariatedf": 4597,
-    "univariatep": 0.592,
+    "univariatep": "0.592",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -767,11 +767,11 @@
     "univariatedifferences": -2.1398,
     "univariateT": -2.27,
     "univariatedf": 3780,
-    "univariatep": 0.023,
+    "univariatep": "0.023",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -785,11 +785,11 @@
     "univariatedifferences": 6.1508,
     "univariateT": 5.93,
     "univariatedf": 462,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -803,11 +803,11 @@
     "univariatedifferences": 3.7673,
     "univariateT": 3.73,
     "univariatedf": 395,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -821,11 +821,11 @@
     "univariatedifferences": 6.1345,
     "univariateT": 5.95,
     "univariatedf": 345,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -839,11 +839,11 @@
     "univariatedifferences": 2.826,
     "univariateT": 2.98,
     "univariatedf": 357,
-    "univariatep": 0.003,
+    "univariatep": "0.003",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -857,11 +857,11 @@
     "univariatedifferences": 6.3057,
     "univariateT": 6.4,
     "univariatedf": 346,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -875,11 +875,11 @@
     "univariatedifferences": 3.8809,
     "univariateT": 4.1,
     "univariatedf": 353,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -893,11 +893,11 @@
     "univariatedifferences": 1.151,
     "univariateT": 1.36,
     "univariatedf": 3140,
-    "univariatep": 0.173,
+    "univariatep": "0.173",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -911,11 +911,11 @@
     "univariatedifferences": 1.484,
     "univariateT": 1.81,
     "univariatedf": 3078,
-    "univariatep": 0.07,
+    "univariatep": "0.070",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -929,11 +929,11 @@
     "univariatedifferences": 16.2177,
     "univariateT": 17.1,
     "univariatedf": 1770,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -947,11 +947,11 @@
     "univariatedifferences": 7.1233,
     "univariateT": 7.67,
     "univariatedf": 2144,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -965,11 +965,11 @@
     "univariatedifferences": 6.0975,
     "univariateT": 6.94,
     "univariatedf": 2130,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -983,11 +983,11 @@
     "univariatedifferences": 3.6839,
     "univariateT": 3.87,
     "univariatedf": 3002,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -1001,11 +1001,11 @@
     "univariatedifferences": 4.431,
     "univariateT": 4.53,
     "univariatedf": 2987,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -1019,11 +1019,11 @@
     "univariatedifferences": 4.0034,
     "univariateT": 4.26,
     "univariatedf": 2842,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -1037,11 +1037,11 @@
     "univariatedifferences": 4.59,
     "univariateT": 4.92,
     "univariatedf": 2896,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -1055,11 +1055,11 @@
     "univariatedifferences": 2.2586,
     "univariateT": 2.47,
     "univariatedf": 5782,
-    "univariatep": 0.014,
+    "univariatep": "0.014",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "3",
@@ -1073,11 +1073,11 @@
     "univariatedifferences": 2.9626,
     "univariateT": 3.4,
     "univariatedf": 2170,
-    "univariatep": 0.001,
+    "univariatep": "0.001",
     "multivariatedifference": 83.8842,
     "multivariateT": -24.3739,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1091,11 +1091,11 @@
     "univariatedifferences": 0.826,
     "univariateT": 1.07,
     "univariatedf": 5075,
-    "univariatep": 0.283,
+    "univariatep": "0.283",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1109,11 +1109,11 @@
     "univariatedifferences": -0.4735,
     "univariateT": -0.55,
     "univariatedf": 4597,
-    "univariatep": 0.583,
+    "univariatep": "0.583",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1127,11 +1127,11 @@
     "univariatedifferences": -2.1448,
     "univariateT": -2.27,
     "univariatedf": 3780,
-    "univariatep": 0.023,
+    "univariatep": "0.023",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1145,11 +1145,11 @@
     "univariatedifferences": 5.6468,
     "univariateT": 5.44,
     "univariatedf": 462,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1163,11 +1163,11 @@
     "univariatedifferences": 1.9904,
     "univariateT": 1.97,
     "univariatedf": 395,
-    "univariatep": 0.05,
+    "univariatep": "0.050",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1181,11 +1181,11 @@
     "univariatedifferences": 5.2995,
     "univariateT": 5.14,
     "univariatedf": 345,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1199,11 +1199,11 @@
     "univariatedifferences": 2.5882,
     "univariateT": 2.73,
     "univariatedf": 357,
-    "univariatep": 0.007,
+    "univariatep": "0.007",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1217,11 +1217,11 @@
     "univariatedifferences": 5.7551,
     "univariateT": 5.84,
     "univariatedf": 346,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1235,11 +1235,11 @@
     "univariatedifferences": 2.5695,
     "univariateT": 2.71,
     "univariatedf": 353,
-    "univariatep": 0.007,
+    "univariatep": "0.007",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1253,11 +1253,11 @@
     "univariatedifferences": 0.6076,
     "univariateT": 0.72,
     "univariatedf": 3140,
-    "univariatep": 0.472,
+    "univariatep": "0.472",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1271,11 +1271,11 @@
     "univariatedifferences": 0.953,
     "univariateT": 1.16,
     "univariatedf": 3078,
-    "univariatep": 0.245,
+    "univariatep": "0.245",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1289,11 +1289,11 @@
     "univariatedifferences": 7.1396,
     "univariateT": 7.53,
     "univariatedf": 1770,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1307,11 +1307,11 @@
     "univariatedifferences": 4.5509,
     "univariateT": 4.9,
     "univariatedf": 2144,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1325,11 +1325,11 @@
     "univariatedifferences": 2.0923,
     "univariateT": 2.38,
     "univariatedf": 2130,
-    "univariatep": 0.017,
+    "univariatep": "0.017",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1343,11 +1343,11 @@
     "univariatedifferences": 2.3518,
     "univariateT": 2.47,
     "univariatedf": 3002,
-    "univariatep": 0.014,
+    "univariatep": "0.014",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1361,11 +1361,11 @@
     "univariatedifferences": 2.8324,
     "univariateT": 2.89,
     "univariatedf": 2987,
-    "univariatep": 0.004,
+    "univariatep": "0.004",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1379,11 +1379,11 @@
     "univariatedifferences": 2.4133,
     "univariateT": 2.57,
     "univariatedf": 2842,
-    "univariatep": 0.01,
+    "univariatep": "0.010",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1397,11 +1397,11 @@
     "univariatedifferences": 2.8705,
     "univariateT": 3.08,
     "univariatedf": 2896,
-    "univariatep": 0.002,
+    "univariatep": "0.002",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1415,11 +1415,11 @@
     "univariatedifferences": 2.2074,
     "univariateT": 2.41,
     "univariatedf": 5782,
-    "univariatep": 0.016,
+    "univariatep": "0.016",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   },
   {
     "id": "4",
@@ -1433,10 +1433,10 @@
     "univariatedifferences": 3.2326,
     "univariateT": 3.7,
     "univariatedf": 2170,
-    "univariatep": 0,
+    "univariatep": "0.000",
     "multivariatedifference": 53.3084,
     "multivariateT": -1.8289,
     "multivariatedf": "20, 326",
-    "multivariatep": 1
+    "multivariatep": "1.000"
   }
 ]
