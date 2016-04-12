@@ -12,6 +12,10 @@
     font-weight: bold;
     text-anchor: start;
 }
+.patient-line {
+    stroke-width: 2;
+    opacity: 0.5;
+}
 line {
     stroke: #2ca02c;
     stroke-width: 2;

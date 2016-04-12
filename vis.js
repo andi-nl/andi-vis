@@ -143,6 +143,7 @@ $(document).ready(function() {
     patients.forEach(function(patient) {
       var onePatientStats = _.filter(patientStats, ["id", patient]);
       linesGraph.append("path")
+        .attr("class", "patient-line")
         .style("stroke", color(onePatientStats[0].id))
         .style("fill", "none")
         .attr("d", patientLine(onePatientStats));
