@@ -145,18 +145,56 @@ $(document).ready(function() {
       .attr("d", innerLine(patientStats));
 
 
-    // utomatically make columns object based on patientStats
-    var colNames = Object.keys(patientStats[0]);
-    var aaColumns = colNames.map(function(el) {
+    // tables
+
+    // columns
+    var uniVarCols = [
+      "id", "plotname", "univariatedifferences", "univariateT",
+      "univariatedf", "univariatep"
+    ];
+
+    var multiVarCols = [
+      "id", "multivariatedifference", "multivariateT",
+      "multivariatedf", "multivariatep"
+    ];
+
+    var dtUniVarCols = uniVarCols.map(function(column) {
       return {
-        "mDataProp": el
+        "title": column
       }
     });
 
-    // add table
-    $("#table").dataTable({
-      "aaData": patientStats,
-      "aoColumns": aaColumns
+    var dtUniVarData = patientStats.map(function(p) {
+      var subp = _.pick(p, uniVarCols);
+      return Object.values(subp);
     });
+
+    var dtMultiVarCols = multiVarCols.map(function(column) {
+      return {
+        "title": column
+      }
+    });
+
+    // for multivariate only one row per patient
+
+    var multiVarData = patients.map(function(patient) {
+      return _.find(patientStats, ["id", patient]);
+    });
+
+    var dtMultiVarData = multiVarData.map(function(p) {
+      var subp = _.pick(p, multiVarCols);
+      return Object.values(subp);
+    });
+
+    // add tables
+    $("#uni-var-table").dataTable({
+      data: dtUniVarData,
+      columns: dtUniVarCols
+    });
+    $("#multi-var-table").dataTable({
+      data: dtMultiVarData,
+      columns: dtMultiVarCols
+    });
+
   });
 });
