@@ -112,7 +112,7 @@ $(document).ready(function() {
       .attr("cy", function(d) {
         return yScale(d['univariateT']);
       })
-      .attr("r", 5)
+      .attr("r", 4)
       .style("fill", function(d) {
         return color(d.id);
       });
@@ -152,13 +152,21 @@ $(document).ready(function() {
       "id", "plotname", "univariatedifferences", "univariateT",
       "univariatedf", "univariatep"
     ];
+    var uniVarColNames = [
+      "patient", "test variable", "difference", "t-value",
+      "degrees of freedom", "p-value"
+    ];
 
     var multiVarCols = [
       "id", "multivariatedifference", "multivariateT",
       "multivariatedf", "multivariatep"
     ];
+    var multiVarColNames = [
+      "patient", "sum of differences", "multivariate statistic",
+      "degrees of freedom", "p-value"
+    ];
 
-    var dtUniVarCols = uniVarCols.map(function(column) {
+    var dtUniVarCols = uniVarColNames.map(function(column) {
       return {
         "title": column
       }
@@ -169,7 +177,7 @@ $(document).ready(function() {
       return Object.values(subp);
     });
 
-    var dtMultiVarCols = multiVarCols.map(function(column) {
+    var dtMultiVarCols = multiVarColNames.map(function(column) {
       return {
         "title": column
       }
