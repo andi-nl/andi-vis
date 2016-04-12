@@ -70,6 +70,17 @@ $(document).ready(function() {
         return yScale(d.inneredge)
       })
 
+    // lines connecting tests for single patients
+    var patientLine = d3.svg.line()
+      .x(function(d) {
+        var xCoord = xScale(testnames.indexOf(d['plotname']));
+        console.log(xCoord);
+        return xCoord;
+      })
+      .y(function(d) {
+        return yScale(d['univariateT']);
+      });
+
     // define plot
     var linesGraph = d3.select("#lines-graph")
       .append("svg")
@@ -82,7 +93,7 @@ $(document).ready(function() {
 
     var yAxis = d3.svg.axis()
       .scale(yScale)
-      .orient("right");
+      .orient("left");
     linesGraph.append("g")
       .attr("class", "axis")
       .call(yAxis);
@@ -127,7 +138,17 @@ $(document).ready(function() {
         .text(d);
     });
 
-    // add zero line
+
+    // connect patient tests
+    patients.forEach(function(patient) {
+      var onePatientStats = _.filter(patientStats, ["id", patient]);
+      linesGraph.append("path")
+        .style("stroke", color(onePatientStats[0].id))
+        .style("fill", "none")
+        .attr("d", patientLine(onePatientStats));
+    })
+
+    // add mean line
     linesGraph.append("line")
       .attr({
         x1: xScale(0),
@@ -136,7 +157,7 @@ $(document).ready(function() {
         y2: yScale(0)
       });
 
-    // add lines
+    // add upper and lower bounds
     linesGraph.append("path")
       .attr("class", "line")
       .attr("d", outerLine(patientStats));
