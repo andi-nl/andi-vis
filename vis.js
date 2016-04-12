@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  d3.json("data/patientoutput.json", function(patientStats) {
+  d3.json("data/patientoutput2.json", function(patientStats) {
 
     var margin = {
       top: 75,
@@ -196,10 +196,13 @@ $(document).ready(function() {
 
     // add tables
     $("#uni-var-table").dataTable({
+      bFilter: false,
       data: dtUniVarData,
       columns: dtUniVarCols
     });
+
     $("#multi-var-table").dataTable({
+      bFilter: false,
       data: dtMultiVarData,
       columns: dtMultiVarCols
     });
