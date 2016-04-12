@@ -198,13 +198,19 @@ $(document).ready(function() {
     $("#uni-var-table").dataTable({
       bFilter: false,
       data: dtUniVarData,
-      columns: dtUniVarCols
+      columns: dtUniVarCols,
+      fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
+        $(nRow).css('color', color(aData[0]))
+      }
     });
 
     $("#multi-var-table").dataTable({
       bFilter: false,
       data: dtMultiVarData,
-      columns: dtMultiVarCols
+      columns: dtMultiVarCols,
+      fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
+        $(nRow).css('color', color(aData[0]))
+      }
     });
 
   });
