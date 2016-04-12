@@ -3,13 +3,13 @@ $(document).ready(function() {
   d3.json("data/patientoutput.json", function(patientStats) {
 
     var margin = {
-      top: 30,
+      top: 75,
       right: 100,
       bottom: 30,
       left: 50
     };
-    var width = 800 - margin.left - margin.right;
-    var height = 500 - margin.top - margin.bottom;
+    var width = 1000 - margin.left - margin.right;
+    var height = 550 - margin.top - margin.bottom;
 
     var color = d3.scale.category10();
 
@@ -92,9 +92,8 @@ $(document).ready(function() {
       .attr("class", "axis")
       .call(xAxis)
       .selectAll("text")
-      .attr("dx", "3em")
       .attr("dy", "-0.3em")
-      .attr("transform", "rotate(0)");
+      .attr("transform", "rotate(45)");
 
     // add 'scatterplot' elements
     linesGraph.selectAll("circle")
