@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     var margin = {
       top: 75,
-      right: 100,
+      right: 150,
       bottom: 30,
       left: 50
     };
@@ -12,6 +12,12 @@ $(document).ready(function() {
     var height = 550 - margin.top - margin.bottom;
 
     var color = d3.scale.category10();
+
+    // patients array
+    var patients = _.map(patientStats, function(patient) {
+      return patient.id;
+    });
+    patients = _.union(patients);
 
     // scales
 
@@ -112,14 +118,13 @@ $(document).ready(function() {
       });
 
     // add legend for patient
-    legendSpace = width / patientStats.length
-    patientStats.forEach(function(d, i) {
-      console.log(d.tails);
+    var legendSpace = 20;
+    patients.forEach(function(d, i) {
       linesGraph.append("text")
         .attr("x", width + margin.right / 2)
-        .attr("y", legendSpace - i * (legendSpace / 2))
-        .style("fill", color(d.id))
-        .text(d.id);
+        .attr("y", i * (legendSpace))
+        .style("fill", color(d))
+        .text(d);
     });
 
     // add zero line
