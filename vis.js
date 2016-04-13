@@ -19,8 +19,13 @@ $(document).ready(function() {
     });
     patients = _.union(patients);
 
-    // scales
+    // tooltip
+    var div = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
 
+
+    // scales
     var scalePadding = 0.5;
     var minScore = d3.min([d3.min(patientStats, function(d) {
         return d.inneredge;
@@ -74,14 +79,13 @@ $(document).ready(function() {
     var patientLine = d3.svg.line()
       .x(function(d) {
         var xCoord = xScale(testnames.indexOf(d['plotname']));
-        console.log(xCoord);
         return xCoord;
       })
       .y(function(d) {
         return yScale(d['univariateT']);
       });
 
-    // define plot
+    // define scatter plot
     var linesGraph = d3.select("#lines-graph")
       .append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -126,6 +130,19 @@ $(document).ready(function() {
       .attr("r", 4)
       .style("fill", function(d) {
         return color(d.id);
+      })
+      .on("mouseover", function(d) {
+        div.transition()
+          .duration(200)
+          .style("opacity", .8);
+        div.html("<span style='color:" + color(d.id) + "'>" + "patient: " + d.id + "<br/>" + d.shortestname + "<br/>" + d.multivariateT + "</span")
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(d) {
+        div.transition()
+          .duration(500)
+          .style("opacity", 0);
       });
 
     // add legend for patient
