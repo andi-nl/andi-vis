@@ -176,9 +176,9 @@ $(document).ready(function() {
     // add mean line
     linesGraph.append("line")
       .attr({
-        x1: xScale(0),
+        x1: xScale(tests[tests.length]),
         y1: yScale(0),
-        x2: xScale(tests.length - 1),
+        x2: xScale(tests[tests.length - 1]),
         y2: yScale(0)
       });
 
