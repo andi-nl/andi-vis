@@ -145,23 +145,32 @@ $(document).ready(function() {
     // add legend for patient
     var legendSpace = 20;
 
-    patients.forEach(function(d, i) {
+    patients.forEach(function(p, i) {
       linesGraph.append("text")
         .attr("x", width + margin.right / 2)
         .attr("y", i * (legendSpace))
-        .style("fill", color(d))
-        .text("patient: " + d);
+        .style("fill", color(p))
+        .on("click", function(el) {
+          var active = this.active ? false : true;
+          var newOpacity = active ? 0 : 0.5;
+          d3.select("#tag" + p.replace(/\s+/g, ""))
+            .transition().duration(100)
+            .style("opacity", newOpacity);
+          this.active = active;
+        })
+        .text("patient: " + p);
     });
 
 
     // connect patient tests
-    patients.forEach(function(patient) {
-      var onePatientStats = _.filter(patientStats, ["id", patient]);
+    patients.forEach(function(p) {
+      var onePatientStats = _.filter(patientStats, ["id", p]);
       linesGraph.append("path")
         .attr("class", "patient-line")
+        .attr("d", patientLine(onePatientStats))
+        .attr("id", "tag" + p.replace(/\s+/g, ""))
         .style("stroke", color(onePatientStats[0].id))
-        .style("fill", "none")
-        .attr("d", patientLine(onePatientStats));
+        .style("fill", "none");;
     })
 
     // add mean line
