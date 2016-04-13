@@ -45,14 +45,14 @@ $(document).ready(function() {
     maxScore = maxScore + scalePadding;
 
     // for x need to translate test name to number
-    var testnames = patientStats.map(function(t) {
+    var tests = patientStats.map(function(t) {
       return t.plotname;
     });
-    testnames = _.union(testnames);
+    tests = _.union(tests);
 
-    var xScale = d3.scale.linear()
-      .domain([0, testnames.length - 1])
-      .range([0, width])
+    var xScale = d3.scale.ordinal()
+      .domain(tests)
+      .rangePoints([0, width])
 
     var yScale = d3.scale.linear()
       .domain([minScore, maxScore])
@@ -61,7 +61,7 @@ $(document).ready(function() {
     // define lines
     var outerLine = d3.svg.line()
       .x(function(d) {
-        return xScale(testnames.indexOf(d['plotname']));
+        return xScale(d.plotname);
       })
       .y(function(d) {
         return yScale(d.outeredge)
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     var innerLine = d3.svg.line()
       .x(function(d) {
-        return xScale(testnames.indexOf(d['plotname']));
+        return xScale(d.plotname);
       })
       .y(function(d) {
         return yScale(d.inneredge)
@@ -78,7 +78,7 @@ $(document).ready(function() {
     // lines connecting tests for single patients
     var patientLine = d3.svg.line()
       .x(function(d) {
-        var xCoord = xScale(testnames.indexOf(d['plotname']));
+        var xCoord = xScale(d.plotname);
         return xCoord;
       })
       .y(function(d) {
@@ -104,11 +104,8 @@ $(document).ready(function() {
 
     var xAxis = d3.svg.axis()
       .scale(xScale)
-      .orient("top")
-      .tickValues(d3.range(testnames.length))
-      .tickFormat(function(t) {
-        return testnames[t];
-      });
+      .orient("top");
+
     linesGraph.append("g")
       .attr("class", "axis")
       .call(xAxis)
@@ -122,7 +119,7 @@ $(document).ready(function() {
       .enter()
       .append("circle")
       .attr("cx", function(d) {
-        return xScale(testnames.indexOf(d['plotname']));
+        return xScale(d.plotname);
       })
       .attr("cy", function(d) {
         return yScale(d['univariateT']);
@@ -147,12 +144,13 @@ $(document).ready(function() {
 
     // add legend for patient
     var legendSpace = 20;
+
     patients.forEach(function(d, i) {
       linesGraph.append("text")
         .attr("x", width + margin.right / 2)
         .attr("y", i * (legendSpace))
         .style("fill", color(d))
-        .text(d);
+        .text("patient: " + d);
     });
 
 
@@ -171,7 +169,7 @@ $(document).ready(function() {
       .attr({
         x1: xScale(0),
         y1: yScale(0),
-        x2: xScale(testnames.length - 1),
+        x2: xScale(tests.length - 1),
         y2: yScale(0)
       });
 
