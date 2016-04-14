@@ -224,7 +224,11 @@ $(document).ready(function() {
 
     var dtUniVarData = patientStats.map(function(p) {
       var subp = _.pick(p, uniVarCols);
-      return Object.values(subp);
+      var keys = Object.keys(subp);
+      var values = keys.map(function(k) {
+        return subp[k];
+      })
+      return values;
     });
 
     var dtMultiVarCols = multiVarColNames.map(function(column) {
@@ -241,7 +245,11 @@ $(document).ready(function() {
 
     var dtMultiVarData = multiVarData.map(function(p) {
       var subp = _.pick(p, multiVarCols);
-      return Object.values(subp);
+      var keys = Object.keys(subp);
+      var values = keys.map(function(k) {
+        return subp[k];
+      })
+      return values;
     });
 
     // add tables
