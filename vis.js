@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  d3.json("data/patientoutput2.json", function(patientStats) {
+  d3.json("data/Result.json", function(patientStats) {
 
     var margin = {
       top: 75,
@@ -13,6 +13,10 @@ $(document).ready(function() {
 
     var color = d3.scale.category10();
 
+    patientStats = patientStats.map(function(p) {
+      p.id = String(p.id);
+      return p;
+    });
     // patients array
     var patients = _.map(patientStats, function(patient) {
       return patient.id;
