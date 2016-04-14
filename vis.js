@@ -132,7 +132,7 @@ $(document).ready(function() {
         div.transition()
           .duration(200)
           .style("opacity", .8);
-        div.html("<span style='color:" + color(d.id) + "'>" + "patient: " + d.id + "<br/>" + d.shortestname + "<br/>" + d.multivariateT + "</span")
+        div.html("<span style='color:" + color(d.id) + "'>" + "patient: " + d.id + "<br/>" + d.shortestname + "<br/>" + d.univariateT + "</span")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
       })
