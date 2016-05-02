@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-  d3.json("data/Result.json", function(patientStats) {
+  d3.json("data/patientoutput2.json", function(patientStats) {
 
     var margin = {
-      top: 75,
+      top: 85,
       right: 150,
       bottom: 30,
       left: 50
