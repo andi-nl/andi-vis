@@ -3,7 +3,7 @@ $(document).ready(function() {
   d3.json("data/patientoutput2.json", function(patientStats) {
 
     var margin = {
-      top: 85,
+      top: 80,
       right: 150,
       bottom: 30,
       left: 50
@@ -92,10 +92,11 @@ $(document).ready(function() {
     // define scatter plot
     var linesGraph = d3.select("#lines-graph")
       .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform",
+              "translate(" + + margin.left + "," + margin.top + ")");
 
     // define axes
 
