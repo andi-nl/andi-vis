@@ -56,7 +56,7 @@ $(document).ready(function() {
 
     var xScale = d3.scale.ordinal()
       .domain(tests)
-      .rangePoints([0, width])
+      .rangePoints([0, width]);
 
     var yScale = d3.scale.linear()
       .domain([minScore, maxScore])
@@ -68,16 +68,16 @@ $(document).ready(function() {
         return xScale(d.plotname);
       })
       .y(function(d) {
-        return yScale(d.outeredge)
-      })
+        return yScale(d.outeredge);
+      });
 
     var innerLine = d3.svg.line()
       .x(function(d) {
         return xScale(d.plotname);
       })
       .y(function(d) {
-        return yScale(d.inneredge)
-      })
+        return yScale(d.inneredge);
+      });
 
     // lines connecting tests for single patients
     var patientLine = d3.svg.line()
@@ -96,7 +96,7 @@ $(document).ready(function() {
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform",
-              "translate(" + + margin.left + "," + margin.top + ")");
+              "translate(" + margin.left + "," + margin.top + ")");
 
     // define axes
 
@@ -136,7 +136,7 @@ $(document).ready(function() {
       .on("mouseover", function(d) {
         div.transition()
           .duration(200)
-          .style("opacity", .8);
+          .style("opacity", 0.8);
         div.html("<span style='color:" + color(d.id) + "'>" + "patient: " + d.id + "<br/>" + d.shortestname + "<br/>" + d.univariateT + "</span")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
@@ -175,8 +175,8 @@ $(document).ready(function() {
         .attr("d", patientLine(onePatientStats))
         .attr("id", "tag" + p.replace(/\s+/g, ""))
         .style("stroke", color(onePatientStats[0].id))
-        .style("fill", "none");;
-    })
+        .style("fill", "none");
+    });
 
     // add mean line
     linesGraph.append("line")
@@ -228,14 +228,14 @@ $(document).ready(function() {
       var keys = Object.keys(subp);
       var values = keys.map(function(k) {
         return subp[k];
-      })
+      });
       return values;
     });
 
     var dtMultiVarCols = multiVarColNames.map(function(column) {
       return {
         "title": column
-      }
+      };
     });
 
     // for multivariate only one row per patient
@@ -249,7 +249,7 @@ $(document).ready(function() {
       var keys = Object.keys(subp);
       var values = keys.map(function(k) {
         return subp[k];
-      })
+      });
       return values;
     });
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
       data: dtUniVarData,
       columns: dtUniVarCols,
       fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
-        $(nRow).css('color', color(aData[0]))
+        $(nRow).css('color', color(aData[0]));
       }
     });
 
@@ -268,7 +268,7 @@ $(document).ready(function() {
       data: dtMultiVarData,
       columns: dtMultiVarCols,
       fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
-        $(nRow).css('color', color(aData[0]))
+        $(nRow).css('color', color(aData[0]));
       }
     });
 
