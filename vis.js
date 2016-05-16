@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function (d3, _, $) {
 
-  d3.json("data/patientoutput2.json", function(patientStats) {
+  d3.json("data/patientoutput2.json", function (patientStats) {
 
     var margin = {
       top: 80,
@@ -13,12 +13,12 @@ $(document).ready(function() {
 
     var color = d3.scale.category10();
 
-    patientStats = patientStats.map(function(p) {
+    patientStats = patientStats.map(function (p) {
       p.id = String(p.id);
       return p;
     });
     // patients array
-    var patients = _.map(patientStats, function(patient) {
+    var patients = _.map(patientStats, function (patient) {
       return patient.id;
     });
     patients = _.union(patients);
@@ -31,25 +31,25 @@ $(document).ready(function() {
 
     // scales
     var scalePadding = 0.5;
-    var minScore = d3.min([d3.min(patientStats, function(d) {
-        return d.inneredge;
-      }),
-      d3.min(patientStats, function(d) {
+    var minScore = d3.min([d3.min(patientStats, function (d) {
+      return d.inneredge;
+    }),
+      d3.min(patientStats, function (d) {
         return d.univariateT;
       })
     ]);
     minScore = minScore - scalePadding;
-    var maxScore = d3.max([d3.max(patientStats, function(d) {
-        return d.outeredge;
-      }),
-      d3.max(patientStats, function(d) {
+    var maxScore = d3.max([d3.max(patientStats, function (d) {
+      return d.outeredge;
+    }),
+      d3.max(patientStats, function (d) {
         return d.univariateT;
       })
     ]);
     maxScore = maxScore + scalePadding;
 
     // for x need to translate test name to number
-    var tests = patientStats.map(function(t) {
+    var tests = patientStats.map(function (t) {
       return t.plotname;
     });
     tests = _.union(tests);
@@ -64,39 +64,39 @@ $(document).ready(function() {
 
     // define lines
     var outerLine = d3.svg.line()
-      .x(function(d) {
+      .x(function (d) {
         return xScale(d.plotname);
       })
-      .y(function(d) {
+      .y(function (d) {
         return yScale(d.outeredge);
       });
 
     var innerLine = d3.svg.line()
-      .x(function(d) {
+      .x(function (d) {
         return xScale(d.plotname);
       })
-      .y(function(d) {
+      .y(function (d) {
         return yScale(d.inneredge);
       });
 
     // lines connecting tests for single patients
     var patientLine = d3.svg.line()
-      .x(function(d) {
+      .x(function (d) {
         var xCoord = xScale(d.plotname);
         return xCoord;
       })
-      .y(function(d) {
-        return yScale(d['univariateT']);
+      .y(function (d) {
+        return yScale(d["univariateT"]);
       });
 
     // define scatter plot
     var linesGraph = d3.select("#lines-graph")
       .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
       .append("g")
-        .attr("transform",
-              "translate(" + margin.left + "," + margin.top + ")");
+      .attr("transform",
+      "translate(" + margin.left + "," + margin.top + ")");
 
     // define axes
 
@@ -123,25 +123,30 @@ $(document).ready(function() {
       .data(patientStats)
       .enter()
       .append("circle")
-      .attr("cx", function(d) {
+      .attr("cx", function (d) {
         return xScale(d.plotname);
       })
-      .attr("cy", function(d) {
-        return yScale(d['univariateT']);
+      .attr("cy", function (d) {
+        return yScale(d["univariateT"]);
       })
       .attr("r", 4)
-      .style("fill", function(d) {
+      .style("fill", function (d) {
         return color(d.id);
       })
-      .on("mouseover", function(d) {
+      .on("mouseover", function (d) {
         div.transition()
           .duration(200)
           .style("opacity", 0.8);
-        div.html("<span style='color:" + color(d.id) + "'>" + "patient: " + d.id + "<br/>" + d.shortestname + "<br/>" + d.univariateT + "</span")
+        div.html(
+          "<span style='color:" + color(d.id) +
+          "'>" + "patient: " + d.id + "<br/>" +
+          d.shortestname + "<br/>" +
+          d.univariateT + "</span"
+        )
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
       })
-      .on("mouseout", function(d) {
+      .on("mouseout", function (d) {
         div.transition()
           .duration(500)
           .style("opacity", 0);
@@ -150,12 +155,12 @@ $(document).ready(function() {
     // add legend for patient
     var legendSpace = 20;
 
-    patients.forEach(function(p, i) {
+    patients.forEach(function (p, i) {
       linesGraph.append("text")
         .attr("x", width + margin.right / 2)
         .attr("y", i * (legendSpace))
         .style("fill", color(p))
-        .on("click", function(el) {
+        .on("click", function (el) {
           var active = this.active ? false : true;
           var newOpacity = active ? 0 : 0.5;
           d3.select("#tag" + p.replace(/\s+/g, ""))
@@ -168,7 +173,7 @@ $(document).ready(function() {
 
 
     // connect patient tests
-    patients.forEach(function(p) {
+    patients.forEach(function (p) {
       var onePatientStats = _.filter(patientStats, ["id", p]);
       linesGraph.append("path")
         .attr("class", "patient-line")
@@ -217,22 +222,22 @@ $(document).ready(function() {
       "degrees of freedom", "p-value"
     ];
 
-    var dtUniVarCols = uniVarColNames.map(function(column) {
+    var dtUniVarCols = uniVarColNames.map(function (column) {
       return {
         "title": column
-      }
+      };
     });
 
-    var dtUniVarData = patientStats.map(function(p) {
+    var dtUniVarData = patientStats.map(function (p) {
       var subp = _.pick(p, uniVarCols);
       var keys = Object.keys(subp);
-      var values = keys.map(function(k) {
+      var values = keys.map(function (k) {
         return subp[k];
       });
       return values;
     });
 
-    var dtMultiVarCols = multiVarColNames.map(function(column) {
+    var dtMultiVarCols = multiVarColNames.map(function (column) {
       return {
         "title": column
       };
@@ -240,14 +245,14 @@ $(document).ready(function() {
 
     // for multivariate only one row per patient
 
-    var multiVarData = patients.map(function(patient) {
+    var multiVarData = patients.map(function (patient) {
       return _.find(patientStats, ["id", patient]);
     });
 
-    var dtMultiVarData = multiVarData.map(function(p) {
+    var dtMultiVarData = multiVarData.map(function (p) {
       var subp = _.pick(p, multiVarCols);
       var keys = Object.keys(subp);
-      var values = keys.map(function(k) {
+      var values = keys.map(function (k) {
         return subp[k];
       });
       return values;
@@ -258,7 +263,7 @@ $(document).ready(function() {
       bFilter: false,
       data: dtUniVarData,
       columns: dtUniVarCols,
-      fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
+      fnRowCallback: function (nRow, aData, iDisplayIndex, iDisplayIndesFull) {
         $(nRow).css('color', color(aData[0]));
       }
     });
@@ -267,8 +272,8 @@ $(document).ready(function() {
       bFilter: false,
       data: dtMultiVarData,
       columns: dtMultiVarCols,
-      fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndesFull) {
-        $(nRow).css('color', color(aData[0]));
+      fnRowCallback: function (nRow, aData, iDisplayIndex, iDisplayIndesFull) {
+        $(nRow).css("color", color(aData[0]));
       }
     });
 
