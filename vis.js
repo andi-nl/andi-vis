@@ -1,4 +1,4 @@
-$(document).ready(function (d3, _, $) {
+$(document).ready(function () {
 
   d3.json("data/patientoutput2.json", function (patientStats) {
 
