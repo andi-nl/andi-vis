@@ -58,5 +58,65 @@
     "test2": "AVLT-delayed_recall_1_to_5",
     "x": 1.7344,
     "y": 1.9443
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 1.4983,
+    "y": 1.6796
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 0.4142,
+    "y": 2.109
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": -0.8636,
+    "y": 1.5515
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": -1.7374,
+    "y": 0.2681
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": -1.7982,
+    "y": -1.1408
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": -1.0176,
+    "y": -2.0159
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 0.2391,
+    "y": -1.9477
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 1.384,
+    "y": -0.9682
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 1.8812,
+    "y": 0.4644
+  },
+  {
+    "test1": "AVLT-total_1_to_5",
+    "test2": "RBMT-prose_1_immrec",
+    "x": 1.4983,
+    "y": 1.6796
   }
-  ] 
+]
